@@ -48,8 +48,6 @@ colormap([0 0 1]);
 mesh(RE*a,RE*b,RE*c);%绘制地球
 hold on;
 
-% plot3(Y0(:,1),Y0(:,2),Y0(:,3),'rp','MarkerSize', 15, 'MarkerFaceColor', 'r');
-
 plot3(Y(:,4),Y(:,5),Y(:,6));
 hold on;
 plot3(Y6(:,4),Y6(:,5),Y6(:,6),'r');
