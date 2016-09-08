@@ -13,7 +13,7 @@
 %各个体成员按适应值从大到小分配选择概率：  
 %P(i)=(q/1-(1-q)^n)*(1-q)^i,  其中 P(0)>P(1)>...>P(n), sum(P(i))=1  
    
-function [selectpop]=NonlinearRankSelect(FUN,pop,bounds,bits)  
+function [selectpop]=GASelect(FUN,pop,bounds,bits)  
   
 global m n  
 selectpop=zeros(m,n);  
