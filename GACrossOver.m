@@ -9,7 +9,6 @@
 %unrestricted use, distribution, and reproduction in any medium, provided theoriginal work is properly cited.  
   
 %交叉操作  
-  
 function [NewPop]=GACrossOver(OldPop,pCross,opts)  
 %OldPop为父代种群，pcross为交叉概率  
   
