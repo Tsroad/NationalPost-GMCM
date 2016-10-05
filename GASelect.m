@@ -18,9 +18,11 @@ function [selectpop]=GASelect(FUN,pop,bounds,bits)
 global m n  
 selectpop=zeros(m,n);  
 fit=zeros(m,1);  
+
 for i=1:m  
        fit(i)=feval(FUN(1,:),(b2f(pop(i,:),bounds,bits)));%以函数值为适应值做排名依据  
 end  
+
 selectprob=fit/sum(fit);%计算各个体相对适应度(0,1)  
 q=max(selectprob);%选择最优的概率  
 x=zeros(m,2);  
