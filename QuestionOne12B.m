@@ -9,15 +9,15 @@
 % unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.
 
 function QuestionOne12B
-
 clc;  %清除所有
 clear all;%清除变量
 close all;%关闭图片
-format long
-data=load('satinfo.txt');
 
 % 已知量参数
+format long
+data=load('satinfo.txt');
 Gm=3.986005e14;
+
 %方程初值
 Xt0=data(10,:);% 9号卫星
 Xt1=data(7,:);% 6号卫星
@@ -53,5 +53,3 @@ hold on;
 plot3(Y6(:,4),Y6(:,5),Y6(:,6),'r');
 legend('6号卫星','9号卫星'); 
 title('卫星轨道示意图');
-
-
