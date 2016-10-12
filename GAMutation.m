@@ -8,9 +8,9 @@
 % This is anopen access code distributed under the Creative Commons Attribution License,which permits  
 %unrestricted use, distribution, and reproduction in any medium, provided theoriginal work is properly cited.  
   
-%变异操作  
 function [NewPop]=Mutation(OldPop,pMutation,VarNum)  
-  
+%变异操作  
+
 global m n NewPop  
 r=rand(1,m);  
 position=find(r<=pMutation);  
