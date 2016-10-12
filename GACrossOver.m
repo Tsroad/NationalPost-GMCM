@@ -8,8 +8,8 @@
 % This is anopen access code distributed under the Creative Commons Attribution License,which permits  
 %unrestricted use, distribution, and reproduction in any medium, provided theoriginal work is properly cited.  
   
-%交叉操作  
 function [NewPop]=GACrossOver(OldPop,pCross,opts)  
+%交叉操作
 %OldPop为父代种群，pcross为交叉概率  
   
 global m NewPop  
@@ -31,4 +31,5 @@ if length(y1)>=2
        end  
    end      
 end  
+
 NewPop(y2,:)=OldPop(y2,:);  
